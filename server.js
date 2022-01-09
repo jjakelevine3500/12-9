@@ -1,7 +1,7 @@
-const express = require("express");
-
-const app = express();
-
+const path = require("path");
+//const router = require("express").Router();
+// exporting html paths
+module.exports = function(app) {
 const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
